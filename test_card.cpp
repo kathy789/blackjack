@@ -4,9 +4,15 @@
 //extern rank {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
                //JACK, QUEEN, KING};
 int main () {
+	/*
+	 * a trivial test not related to test_card.cpp
 	int * ptr;
-	ptr = new int(7); // the compiler will throw an error: ptr not initialized yet
+	//*ptr = 7; // the compiler will throw an error: ptr not initialized yet, we solve the problem by next line.
+	ptr = new int(7); 
 	std:: cout << *ptr << std::endl;
+	*/
+
+	
     Card cards[3]; // it will call the user defined default constructor three times
     cards[0] = Card(NINE, DIAMONDS, true); // create a new Card and copy it to cards[0]  // does the compiler
  // has a default assignment operator? Yes. The compiler creates its own default copy constructor and assignment operator
