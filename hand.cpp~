@@ -37,7 +37,7 @@ void Hand::Clear()
 	unsigned int i;
 	for (i = 0 ; i < m_Cards.size(); i ++ ) {
 
-		delete(m_Cards[i]);  // is it necessary?
+		delete(m_Cards[i]);
 	}
 	m_Cards.clear();
 }

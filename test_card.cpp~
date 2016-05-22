@@ -16,8 +16,6 @@ int main () {
     std::cout<< static_cast<suit> (3) <<std::endl; // output: 3
     std::cout << ACE << std::endl; // output : 1
     std::cout<< rank(0)<< std::endl;
-    std::cout<< rank(1) << std::endl;
-
     Card cards[3]; // it will call the user defined default constructor three times
     cards[0] = Card(NINE, DIAMONDS, true); // create a new Card and copy it to cards[0]  // does the compiler
  // has a default assignment operator? Yes. The compiler creates its own default copy constructor and assignment operator
