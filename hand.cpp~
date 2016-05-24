@@ -30,7 +30,7 @@ Hand::~Hand()
  */
 void Hand::Add(Card* pCard)
 {
-   if (pCard != NULL) { // Do not forget to check null pointer!
+   if (pCard != nullptr) { // Do not forget to check null pointer!
       m_Cards.push_back(pCard);
    }
 }

@@ -7,6 +7,7 @@
  */
 GenericPlayer::GenericPlayer(const std::string& name): m_Name(name)
 {
+    std::cout << "generic player constructor is called" << std::endl;  
 }
 
 /*

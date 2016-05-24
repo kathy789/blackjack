@@ -30,9 +30,10 @@ House::~House()
  */
 bool House::IsHitting() const
 {
-     
-     
-     return (GetTotal() <= 16);
+     if (GetTotal() <= 16) {
+             return true;  
+     }
+     return false;
 }   
 
 /*

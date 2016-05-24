@@ -1,8 +1,8 @@
 //Blackjack
 //Plays a simple version of the casino game of blackjack; for 1 - 7 players"
 /*
-
-  1) destructor : Is it necessary to call clear() ? Answer : NO.
+ 1) constructor : try const_iterator  and ++
+ 2) destructor : Is it necessary to call clear()
  
 */
 #include "game.h"
@@ -18,9 +18,8 @@ Game::Game(const std::vector<std::string>& names)
 {
    m_Players.reserve(7);
  
-  std::vector<std::string>::const_iterator it;  // use const_iterator not iterator, since names is a const reference 
-  for ( it = names.begin(); it != names.end() ; ++it) {   // in this case, no difference between ++it and it++, but there is 
-                                                          //difference between  y = ++x and y = x++
+  std::vector<std::string>::const_iterator it;  // const_iterator works! try  it tomorrow
+  for ( it = names.begin(); it != names.end() ; it++ ) {   // try to recall ++ pre post  cases
   // for (unsigned int i = 0 ; i < names.size(); i++) {
                  m_Players.push_back(Player(*it));
              //  m_Players.push_back(Player(names[i]));
@@ -38,8 +37,8 @@ Game::Game(const std::vector<std::string>& names)
  */
 Game::~Game()
 {
-   //m_Players.clear(); // Clear() : remove all the elements in the vector, but the vector object still exists.
-   // will it be automatically cleared ? Yes. It will automatically destroys all the elements in the vector destructor.     
+   m_Players.clear(); // Clear() : remove all the elements in the vector, but the vector object still exists.
+   // will it be automatically cleared ? check it tomorrow.      
 }
 
 /*

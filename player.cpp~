@@ -44,7 +44,7 @@ bool Player::IsHitting() const
     std::cout << m_Name << ", do you want a hit? (Y/N): " ;
     std::cin >> res;
     std::cout << std::endl;	 
-    if (res == 'y' || res == 'Y') {
+    if (res == 'y' or  res == 'Y') {
 
             return true;
     }

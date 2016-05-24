@@ -62,7 +62,7 @@ void Deck::Populate()
 
                //this ->Add(new Card(rank(j), suit(i)));  // if we do not use new 
                // and use &, the complier will complain returning temporary address.
-               Add(new Card((Card::rank) j, (Card::suit) i ));   // same output as above
+               Add(new Card((rank) j, (suit) i ));   // same output as above
         }
 
      }         

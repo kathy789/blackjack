@@ -69,9 +69,8 @@ void Card::Flip()
 std::ostream& operator<<(std::ostream& os, const Card& aCard)
 {
     //const std::string str_suit[] = {"CLUBS", "DIAMONDS", "HEARTS", "SPADES"};
-     const std::string unicode[] = {"\u2663", "\u2666", "\u2665", "\u2660"};
-     const std::string str_rank[] = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-    
+    const std::string unicode[] = {"\u2663", "\u2666", "\u2665", "\u2660"};
+    const std::string str_rank[] = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     if (aCard.m_IsFaceUp == false) {
     	os << "XX";
 

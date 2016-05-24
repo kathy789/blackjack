@@ -15,8 +15,8 @@ public:
     * By default, enumerations start at 0.
     * 
     */
-    enum rank {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
-               JACK, QUEEN, KING};
+    //enum rank {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
+              // JACK, QUEEN, KING};
 
     /* enumeration of the suit
     *
@@ -26,7 +26,7 @@ public:
     * end to give the size of the enumeration. For example, we could place a value
     * called SUIT_SIZE as the last value. Hence SUIT_SIZE would be 4.
     */
-    enum suit {CLUBS, DIAMONDS, HEARTS, SPADES};
+    //enum suit {CLUBS, DIAMONDS, HEARTS, SPADES};
 
     /* overloading << operator so can send Card object to standard output 
      * 

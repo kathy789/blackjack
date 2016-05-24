@@ -1,7 +1,7 @@
 #include "main.h"
 /*
   difference between my code and solution : solution check whether num_players is in the range of 1 and 7 by while loop
-   Final question: design ptr to card , virtual function, iterator
+   Final question: design ptr , virtual function
 */
  
 /*
